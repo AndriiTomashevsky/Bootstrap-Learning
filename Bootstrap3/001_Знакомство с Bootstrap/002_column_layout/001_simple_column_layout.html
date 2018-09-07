@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Колоночная верстка. Простой макет.</title>
+
+	<!--Подключение необходимых файлов-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href="../Bootstrap/styles/StyleSheet.css" rel="stylesheet" />
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+	<!--<style>
+		.col-md-12 {
+			background: #dedede;
+		}
+
+		.col-md-3 {
+			background: #ffb4b4;
+		}
+
+		.col-md-6 {
+			background: #fff1b9;
+		}
+
+	</style>-->
+
+</head>
+<body>
+
+
+    <!--Колоночная верстка в Bootstrap состоит из строк в 12 колонок по горизонтали. При использовании динамических CSS-запросов, сетка и элементы адаптируются под различные экраны устройств.
+        Принцип создания макета:
+            - создание контейнера (див с классом "container"); 
+            - создание "строки" (див с классом "row") в диве с классом "container";
+            - создание колонок в "строке". Размер и количество см. в таблице ниже. -->
+    
+     
+    <!----------------------------------------------------------------------------------------------------------------------------
+    |                    | Очень малые устройства        | Малые устройства     | Средние устройства    | Большие устройства     |
+    |                    | (мобильные телефоны) < 768px  | (планшеты) >= 768px  | (компьютеры) >= 992px | (компьютеры) >= 1200px |
+    ------------------------------------------------------------------------------------------------------------------------------
+    | Количество колонок |            12                 |        12            |          12           |           12           |
+    ------------------------------------------------------------------------------------------------------------------------------
+    | Название класса    |         .col-xs-*             |     .col-sm-*        |       .col-md-*       |        .col-lg-*       |
+    ------------------------------------------------------------------------------------------------------------------------------
+        
+    * - количество колонок в "строке" (максимум 12).
+        
+    ->
+
+    <!-- Класс "container" делает блок фиксированной ширины:
+    
+        a) при ширине окна браузера от 798px до 991px - 750px
+        b) при ширине окна браузера от 992px до 1199px - 970px
+        c) при ширине окна браузера выше 1200px - 1170px
+            
+    -->
+
+    <div class="container">
+
+        <!--Первая строка-->
+
+        <!--<div class="row">
+            <div class="col-md-12">
+                <p>Ширина блока в 12 колонок</p>
+            </div>
+        </div>-->
+
+        <!--Вторая строка-->
+
+        <div class="row" >
+            <div class="col-sm-3">
+				<p>col-sm-3 if the browser window is 768px or bigger</p>
+            </div>
+            <div class=" col-sm-6">
+				<p>col-sm-6 if the browser window is 768px or bigger</p>
+            </div>
+            <div class=" col-sm-3">
+				<p>col-sm-3 if the browser window is 768px or bigger</p>
+            </div>
+        </div>
+
+        <!--Третья строка-->
+
+        <!--<div class="row">
+            <div class="col-md-12">
+                <p>Ширина блока в 12 колонок</p>
+            </div>
+        </div>-->
+
+    </div>
+</body>
+</html>
